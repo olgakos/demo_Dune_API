@@ -1,9 +1,7 @@
 package tests;
 
 import io.restassured.RestAssured;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import static io.restassured.RestAssured.*;
 import static io.restassured.http.ContentType.JSON;
@@ -29,8 +27,9 @@ public class DuneTestsLevel2 {
         baseURI = "https://the-dune-api.herokuapp.com";
     }
 
+
     @Test
-    @DisplayName("Проверить статус код 200")
+    @DisplayName("Проверяем, что статус код 200")
     void checkStatus200() {
         get(baseURI)
                 .then()
@@ -38,20 +37,20 @@ public class DuneTestsLevel2 {
     }
 
     @Test
-    @DisplayName("Проверяем, что список цитат не пуст.")
+    @DisplayName("Проверяем, что список цитат не пуст")
     void getBooksTest() {
         get("/quotes")
                 .then()
                 .body("id", hasSize(greaterThan(0)));
     }
 
-    
     //1. сделать запрос на адрес https://the-dune-api.herokuapp.com/quotes/id/14
     //2. проверить, что "quote" = "Fear is the mind-killer."
     //Шаблон: GET /quotes/id/{id}
     //Ответ: {"id":"14","quote":"Fear is the mind-killer."}    
+    @Disabled ("Этот тест не будет запущен")
     @Test
-    @DisplayName("Проверить, что цитата с id=14 содержит ожидаемый текст")
+    @DisplayName("Проверяем, что цитата с id 14 содержит ожидаемый текст2")
     void checkQuoteAndItId2WithoutGiven() {
         get("/quotes/id/14")
                 .then()
@@ -60,7 +59,7 @@ public class DuneTestsLevel2 {
     }
 
     @Test
-    @DisplayName("Проверить, что цитата с id=Х содержит точный текст=Y")
+    @DisplayName("Проверяем, что цитата с id 14 содержит ожидаемый текст")
     void checkQuoteWithStringData() {
         String data = "{\"id\":\"14\",\"quote\":\"Fear is the mind-killer.\"}";
         given()
@@ -79,7 +78,7 @@ public class DuneTestsLevel2 {
     Ответ: [{"id":"14","title":"Sandworms of Dune","year":"2007","author":["Brian Herbert","Kevin J. Anderson"],"wiki_url":"https://en.wikipedia.org/wiki/Sandworms_of_Dune"}]
      */
     @Test
-    @DisplayName("Запросить случайную книгу. У книги есть название и автор.")
+    @DisplayName("Запрашиваем случайную книгу. У книги есть название и автор.")
     void checkRandomBook() {
         get("/books")
                 .then()
@@ -90,7 +89,7 @@ public class DuneTestsLevel2 {
 
      //ШАБЛОН: {"id":"2","title":"Dune Messiah","year":"1969","author":"Frank Herbert","wiki_url":"https://en.wikipedia.org/wiki/Dune_Messiah"}
      @Test
-     @DisplayName("Проверка книги подядковый №2. Проверить точное название книги.")
+     @DisplayName("Проверяем книгу, изданную под №2. Проверяем точное название книги.")
      void checkBookNumberIs2() {
          String response = get("/books/id/2")
                  .then()
@@ -105,7 +104,7 @@ public class DuneTestsLevel2 {
 //[{"id":"1","title":"Dune","year":"1984","director":"David Lynch","wiki_url":"https://en.wikipedia.org/wiki/Dune_(1984_film)"},
 // {"id":"2","title":"Dune","year":"2021","director":"Denis Villeneuve","wiki_url":"https://en.wikipedia.org/wiki/Dune_(2021_film)"}]
      @Test
-     @DisplayName("Проверка списка. Размер списка фильмов: 2 пункта")
+     @DisplayName("Проверяем, что размер списка фильмов = 2 записи")
      void checkMoviesListAsTotal() {
          get("/movies/2")
                  .then()
@@ -116,7 +115,7 @@ public class DuneTestsLevel2 {
 //[{"id":"1","title":"Dune","year":"1984","director":"David Lynch","wiki_url":"https://en.wikipedia.org/wiki/Dune_(1984_film)"},
 // {"id":"2","title":"Dune","year":"2021","director":"Denis Villeneuve","wiki_url":"https://en.wikipedia.org/wiki/Dune_(2021_film)"}]
     @Test
-    @DisplayName("Проверить 2 параметра сразу. Проверяем имена 2 режиссеров.")
+    @DisplayName("Проверяем 2 параметра сразу. Проверяем имена 2 режиссеров.")
     void directorsTest() {
         Response response = (Response) given()
                 .contentType(JSON) //отметили структуру данных (здесь по умолчанию это json)
@@ -134,9 +133,10 @@ public class DuneTestsLevel2 {
     }
 
 
-//урок 19 1/3 логи
+    /*
+//урок 19 логи
     @Test
-    @DisplayName("Проверить, что цитата с id=Х содержит текст=Y")
+    @DisplayName("Проверить, что цитата с id=Х содержит текст=Y (3)")
     void checkQuoteAndItIdLog() {
         given() //здесь начата подготовка
                 .log().all()
@@ -146,4 +146,5 @@ public class DuneTestsLevel2 {
                 .log().all() //непонятный конфликт
                 .body("id", is("14"));
     }
+     */
 }
