@@ -56,6 +56,9 @@
 <br>Шаги:
 <br>1. Открыть терминал
 <br>2. Запустить на выполнение команду:
+```
+gradle clean test
+```
 
 ## <img src="images/logo/Jenkins.svg" width="30" height="30"  alt="Jenkins"/> Запуск тестов в Jenkins
 <p><a href="https://jenkins.autotests.cloud/job/c011-Dune-API-OlgaKos-Tests/">Сборка в Jenkins</a>
