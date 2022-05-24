@@ -5,9 +5,9 @@ import org.junit.jupiter.api.*;
 
 import static io.restassured.RestAssured.*;
 import static io.restassured.http.ContentType.JSON;
-//import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
-//import static listeners.CustomAllureListener.withCustomTemplates;
-//import static org.assertj.core.api.Assertions.assertThat;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
+import static listeners.CustomAllureListener.withCustomTemplates;
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.Matchers.*;
 
 import io.restassured.path.json.JsonPath;

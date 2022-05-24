@@ -30,10 +30,10 @@
 <a href="https://rest-assured.io/"><img src="images/logo/RestAssured.svg" width="50" height="50"  alt="Rest-Assured" title="Rest-Assured"></a>
 <a href="https://www.jenkins.io/"><img src="images/logo/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>
 <a href="https://github.com/allure-framework/allure2"><img src="images/logo/Allure.svg" width="50" height="50"  alt="Allure"/></a>  
-<a href="https://qameta.io/"><img src="images/logo/Allure_TO.svg" width="50" height="50"  alt="AllureTestOps" title="AllureTestOps"></a>
+<!--<a href="https://qameta.io/"><img src="images/logo/Allure_TO.svg" width="50" height="50"  alt="AllureTestOps" title="AllureTestOps"></a>
 <a href="https://habr.com/ru/post/438870/"><img src="images/logo/Lombok.svg" width="50" height="50"  alt="Lombok" title="Lombok"></a>  
 <a href="https://aerokube.com/selenoid/"><img src="images/logo/Selenoid.svg" width="50" height="50"  alt="Selenoid"/></a>
-<a href="https://web.telegram.org/"><img width="50" height="50"  alt="Telegram" src="images/logo/Telegram.svg"></a>
+<a href="https://web.telegram.org/"><img width="50" height="50"  alt="Telegram" src="images/logo/Telegram.svg"></a>-->
 </p>
 
 Перечень технологий и инструментов, использованных при реализации этого проекта:
@@ -56,14 +56,7 @@
 <br>Шаги:
 <br>1. Открыть терминал
 <br>2. Запустить на выполнение команду:
-###### Локальный запуск:
-```
-gradle clean test
-```
-###### Удаленный запуск:
-```
 
-```
 ## <img src="images/logo/Jenkins.svg" width="30" height="30"  alt="Jenkins"/> Запуск тестов в Jenkins
 <p><a href="https://jenkins.autotests.cloud/job/c011-Dune-API-OlgaKos-Tests/">Сборка в Jenkins</a>
 
@@ -87,6 +80,7 @@ gradle clean test
 <img title="Allure Graphics" src="images/screens/ScreenshotAllure2.jpg" alt="Allure Graphics">
 </p>
 
+<!--
 ## :watermelon: Тестовая документация в Allure TestOps
 
 <p align="center">
@@ -106,6 +100,6 @@ gradle clean test
 <p align="center">
 <img title="Telegram Bot" src="images/screens/ScreenshotTelegram.jpg" alt="Telegram Bot">
 </p>
-
+-->
 ----------
-ЧЕРНОВИК
+v 2022-05-24
