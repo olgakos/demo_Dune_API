@@ -1,10 +1,8 @@
-Пример тестов API
 <p align="center">
 <img title="Logo" src="https://user-images.githubusercontent.com/48391286/115104563-fcbaf400-9f76-11eb-912d-5d2b7a9f4933.jpg">
 </p>
 
 # Проект по автоматизации тестирования Dune API
-
 :earth_americas: https://github.com/ywalia01/dune-api
 
 <p>Данный публичный API предоставляет следующий функционал: поиск цитат, запрос информации о книгах и фильмах вселенной "Дюны" :) </p>
@@ -117,4 +115,4 @@ gradle clean test
 </p>
 -->
 ----------
-v 2022-05-24
+2022-05-24 (some refactoring)
