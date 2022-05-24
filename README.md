@@ -1,10 +1,20 @@
-Пример с API тестами на проект demo Dune
-
+Пример тестов API
 <p align="center">
 <img title="Logo" src="https://user-images.githubusercontent.com/48391286/115104563-fcbaf400-9f76-11eb-912d-5d2b7a9f4933.jpg">
 </p>
 
+# Проект по автоматизации тестирования Dune API
 
+:earth_americas: https://github.com/ywalia01/dune-api
+
+<p>Данный публичный API предоставляет следующий функционал: поиск цитат, запрос информации о книгах и фильмах вселенной "Дюны" :) </p>
+<p>Сборка запущена с помощью инструмента удаленного запуска Jenkins</p>
+<p>Получены результаты теста в формате Allure отчета</p>
+<p>Артефакты тестирования (скриншот и видео) для API проектов не предусмотрены.</p>
+
+<p align="center">
+<img title="Logo" src="https://user-images.githubusercontent.com/48391286/115104563-fcbaf400-9f76-11eb-912d-5d2b7a9f4933.jpg">
+</p>
 
 ## Содержание:
 - [Технологии и инструменты](#watermelon-технологии-и-инструменты)
@@ -25,17 +35,22 @@
 <a href="https://rest-assured.io/"><img src="images/logo/RestAssured.svg" width="50" height="50"  alt="Rest-Assured" title="Rest-Assured"></a>
 <a href="https://www.jenkins.io/"><img src="images/logo/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>
 <a href="https://github.com/allure-framework/allure2"><img src="images/logo/Allure.svg" width="50" height="50"  alt="Allure"/></a>  
+<a href="https://habr.com/ru/post/438870/"><img src="images/logo/Lombok.svg" width="50" height="50"  alt="Lombok" title="Lombok"></a> 
 <!--<a href="https://qameta.io/"><img src="images/logo/Allure_TO.svg" width="50" height="50"  alt="AllureTestOps" title="AllureTestOps"></a>
-<a href="https://habr.com/ru/post/438870/"><img src="images/logo/Lombok.svg" width="50" height="50"  alt="Lombok" title="Lombok"></a>  
 <a href="https://aerokube.com/selenoid/"><img src="images/logo/Selenoid.svg" width="50" height="50"  alt="Selenoid"/></a>
 <a href="https://web.telegram.org/"><img width="50" height="50"  alt="Telegram" src="images/logo/Telegram.svg"></a>-->
 </p>
 
-Перечень технологий и инструментов, использованных при реализации этого проекта:
+Перечень основных технологий и инструментов, использованных при реализации этого проекта:
 - Автотесты написаны на языке `Java`
 - Для сборки проекта используется `Gradle`
 - Проект `Lombok`- плагин компилятора, который добавляет в Java новые «ключевые слова» и превращает аннотации в Java-код.
 - Java-библиотека для автоматизации тестирования REST-API: `REST Assured`
+- `Jenkins` выполняет удаленный запуск тестов в визуальном-онлайн интерфейсе. Установки дополнительных приложений на компьютер пользователя не требуется.
+- `Allure Report` формирует наглядный графический отчет о результатах запуска тестов.
+<!--
+- После завершения прогона тестов, специальный `Telegram Bot` отправляются в Telegram краткий вариант Allure Report
+-->
 
 ## :watermelon: Реализованные проверки
 Примеры API тестов:
@@ -56,10 +71,9 @@ gradle clean test
 ```
 
 ## <img src="images/logo/Jenkins.svg" width="30" height="30"  alt="Jenkins"/> Запуск тестов в Jenkins
-<p><a href="https://jenkins.autotests.cloud/job/c011-Dune-API-OlgaKos-Tests/">Сборка в Jenkins</a>
-
-<br>Шаги:
-<br>1. Зарегистрированным пользователем перейти на страницу сборки проекта по ссылке
+<p><a href="https://jenkins.autotests.cloud/job/c011-Dune-API-OlgaKos-Tests/">ссылка</a>
+<p>Шаги:
+<br>1. <i>Зарегистрированным</i> пользователем перейти на страницу сборки проекта по ссылке
 <br>2. Перейти на страницу "Собрать с параметрами"
 <br>3. Запустить выполнение тестов синей кнопкой "Собрать" (внизу страницы)
 
