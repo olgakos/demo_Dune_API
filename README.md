@@ -65,7 +65,6 @@ gradle clean test
 <a href="https://jenkins.autotests.cloud/job/c011-Dune-API-OlgaKos-Tests/">Сборка в Jenkins</a>
 
 
-
 Шаги:
 
 ## :bellhop_bell: Отчет о прохождении тестов в Allure report
