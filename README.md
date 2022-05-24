@@ -64,11 +64,11 @@ gradle clean test
 ```
 
 ```
-## <img src="images/logo/Jenkins.svg" width="50" height="50"  alt="Jenkins"/> Запуск тестов в Jenkins
+## <img src="images/logo/Jenkins.svg" width="30" height="30"  alt="Jenkins"/> Запуск тестов в Jenkins
 <p><a href="https://jenkins.autotests.cloud/job/c011-Dune-API-OlgaKos-Tests/">Сборка в Jenkins</a>
 
 <br>Шаги:
-<br>1. Зарегистрированным пользователем перейти на страницу сборки проекта по ссылке (выше)
+<br>1. Зарегистрированным пользователем перейти на страницу сборки проекта по ссылке
 <br>2. Перейти на страницу "Собрать с параметрами"
 <br>3. Запустить выполнение тестов синей кнопкой "Собрать" (внизу страницы)
 
