@@ -17,8 +17,8 @@
 - [Запуск тестов в Jenkins](#watermelon-Запуск-тестов-в-Jenkins)
 - [Отчет о прохождении тестов в Allure report](#bellhop_bell-Отчет-о-прохождении-тестов-в-Allure-report)
 <!--- [Тестовая документация в Allure TestOps](#watermelon-Тестовая-документация-в-Allure-TestOps)
-- [Видео прохождения тестов](#watermelon-Видео-прохождения-тестов)
-- [Отчет в Telegram](#bellhop_bell-Отчет-в-Telegram)-->
+- [Видео прохождения тестов](#watermelon-Видео-прохождения-тестов)-->
+- [Отчет в Telegram](#bellhop_bell-Отчет-в-Telegram)
 
 ## :watermelon: Технологии и инструменты
 <p align="center">
@@ -31,8 +31,8 @@
 <a href="https://github.com/allure-framework/allure2"><img src="images/logo/Allure.svg" width="50" height="50"  alt="Allure"/></a>  
 <a href="https://habr.com/ru/post/438870/"><img src="images/logo/Lombok.svg" width="50" height="50"  alt="Lombok" title="Lombok"></a> 
 <!--<a href="https://qameta.io/"><img src="images/logo/Allure_TO.svg" width="50" height="50"  alt="AllureTestOps" title="AllureTestOps"></a>
-<a href="https://aerokube.com/selenoid/"><img src="images/logo/Selenoid.svg" width="50" height="50"  alt="Selenoid"/></a>
-<a href="https://web.telegram.org/"><img width="50" height="50"  alt="Telegram" src="images/logo/Telegram.svg"></a>-->
+<a href="https://aerokube.com/selenoid/"><img src="images/logo/Selenoid.svg" width="50" height="50"  alt="Selenoid"/></a>-->
+<a href="https://web.telegram.org/"><img width="50" height="50"  alt="Telegram" src="images/logo/Telegram.svg"></a>
 </p>
 
 Перечень основных технологий и инструментов, использованных при реализации этого проекта:
@@ -42,9 +42,8 @@
 - Java-библиотека для автоматизации тестирования REST-API: `REST Assured`
 - `Jenkins` выполняет удаленный запуск тестов в визуальном-онлайн интерфейсе. Установки дополнительных приложений на компьютер пользователя не требуется.
 - `Allure Report` формирует наглядный графический отчет о результатах запуска тестов.
-<!--
-- После завершения прогона тестов, специальный `Telegram Bot` отправляются в Telegram краткий вариант Allure Report
--->
+- После завершения прогона тестов, специальный `Telegram Bot` отправляются в Telegram краткий вариант Allure Report. Отчет поступит в demo-группу `OlgaKos Bot_Group`
+
 
 ## :watermelon: Реализованные проверки
 Примеры API тестов:
@@ -104,7 +103,7 @@ gradle clean test
 <p align="center">
   <img title="Allure TestOps" src="images/screens/ScreenshotAllureTestOps2" alt="TestOps">
 </p>
-
+-->
 
 ## :bellhop_bell: Отчет в Telegram
 После завершения сборки специальный Telegram-бот отправляет сообщение с отчетом о прогоне тестов.
@@ -113,6 +112,7 @@ gradle clean test
 <p align="center">
 <img title="Telegram Bot" src="images/screens/ScreenshotTelegram.jpg" alt="Telegram Bot">
 </p>
--->
+
 ----------
 2022-05-24 (some refactoring)
+2022-05-25 (add some Telegram Notifications)
